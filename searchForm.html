@@ -1,0 +1,35 @@
+<!-- Name: Caitlin Spyra -->
+<!-- Email: cspyra@uw.edu -->
+<!-- Desc: Page that holds search form and dispalys results as links. -->
+
+<!-- DOCTYPE html -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Search Proof of Concept</title>
+        <!-- Imports -->
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- Scripts -->
+        <script src="search.js" onload="setSite()"></script>
+</head>
+
+<body>
+    <!-- Form -->
+    <form id="folkForm">
+        <select class id="category" name="searchCategory">
+            <option value="" selected disabled>Select a Category to Search</option>
+            <option value="Catalogue Number">Catalogue Number</option>
+            <option value="Performer">Performer</option>
+            <option value="Title">Title</option>
+            <option value="All">All Categories</option>
+        </select>
+        <input type="text" id="formQuery" name ="searchValue" value=""/>
+        <input type="button" onclick=searchSite() value="submit">
+    </form>  
+    
+    <!-- Results -->
+    <div id="searchResult"></div>
+
+</body>
+</html>
